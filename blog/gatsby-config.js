@@ -10,8 +10,8 @@
 module.exports = {
   siteMetadata: {
     title: `Totally Rad Website`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `IT-DEV 164 Gatsby Blog`,
+    author: `Mike Armstrong`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
       name: `Mike Armstrong`,
@@ -28,7 +28,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceID: "ljxaoo0hj1tg",
+        accessToken: "TzdmhHBPDxgLeHtBcihVMiQd1MP1xSuYMhhRdtAhvUY",
+      },
+    }`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
