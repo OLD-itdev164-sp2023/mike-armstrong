@@ -1,15 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    title: `Totally Rad Website`,
+    title: `2.12.2023 1:28PM`,
     description: `IT-DEV 164 Gatsby Blog`,
     author: `Mike Armstrong`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -29,12 +20,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-contentful",
+      resolve: `gatsby-source-contentful`,
       options: {
-        spaceID: "ljxaoo0hj1tg",
-        accessToken: "TzdmhHBPDxgLeHtBcihVMiQd1MP1xSuYMhhRdtAhvUY",
+        spaceId: `cblzow96a5gq`,
+        accessToken: `uXoMOwjRffg_0OHsEHVKvrvUVaFrWu6VLJprw1j1JP8`,
       },
-    }`gatsby-transformer-sharp`,
+    },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
