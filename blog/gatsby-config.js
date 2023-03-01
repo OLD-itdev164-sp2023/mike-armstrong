@@ -1,17 +1,8 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    title: `Totally Rad Website`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `2.12.2023 1:28PM`,
+    description: `IT-DEV 164 Gatsby Blog`,
+    author: `Mike Armstrong`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
       name: `Mike Armstrong`,
@@ -26,6 +17,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `cblzow96a5gq`,
+        accessToken: `uXoMOwjRffg_0OHsEHVKvrvUVaFrWu6VLJprw1j1JP8`,
       },
     },
     `gatsby-transformer-sharp`,
