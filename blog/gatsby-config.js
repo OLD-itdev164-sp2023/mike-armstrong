@@ -1,6 +1,10 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
-    title: `2.12.2023 1:28PM`,
+    title: `ITDEV-164`,
     description: `IT-DEV 164 Gatsby Blog`,
     author: `Mike Armstrong`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -22,10 +26,11 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `cblzow96a5gq`,
-        accessToken: `uXoMOwjRffg_0OHsEHVKvrvUVaFrWu6VLJprw1j1JP8`,
-      },
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
+      }
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
